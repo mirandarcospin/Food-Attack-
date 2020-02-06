@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,70 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="j2t-Mk-lvu">
+                                <rect key="frame" x="78.5" y="359" width="257" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="fAt-iI-OIF"/>
+                                    <constraint firstAttribute="width" constant="257" id="hl6-tV-HUF"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="nbU-vk-gWC">
+                                <rect key="frame" x="179" y="418" width="56" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nbU-vk-gWC" secondAttribute="height" multiplier="14:15" id="EBL-RU-ODd"/>
+                                    <constraint firstAttribute="width" constant="56" id="Snz-cp-GuM"/>
+                                    <constraint firstAttribute="height" constant="60" id="Vbc-UO-7uE"/>
+                                </constraints>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Attack!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iil-I6-IK8">
+                                <rect key="frame" x="40" y="280" width="334" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="K6p-L5-edE"/>
+                                    <constraint firstAttribute="width" secondItem="Iil-I6-IK8" secondAttribute="height" multiplier="334:71" id="qdz-I5-Qqv"/>
+                                    <constraint firstAttribute="width" constant="334" id="yTf-RJ-Nk4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="65"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miranda Ramirez Cospin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-9M-21o">
+                                <rect key="frame" x="80" y="545" width="254" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="CPB-2E-sxy"/>
+                                    <constraint firstAttribute="width" constant="254" id="c9r-kG-sml"/>
+                                    <constraint firstAttribute="width" secondItem="Cdw-9M-21o" secondAttribute="height" multiplier="127:14" id="tS5-qo-yfE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cdw-9M-21o" firstAttribute="top" secondItem="j2t-Mk-lvu" secondAttribute="bottom" constant="15" id="5Yf-Kt-tHw"/>
+                            <constraint firstItem="j2t-Mk-lvu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6GU-zu-iZX"/>
+                            <constraint firstItem="j2t-Mk-lvu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Aib-Ab-FqB"/>
+                            <constraint firstItem="j2t-Mk-lvu" firstAttribute="top" secondItem="Iil-I6-IK8" secondAttribute="bottom" constant="8" id="BWX-do-cca"/>
+                            <constraint firstItem="nbU-vk-gWC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GtE-IM-ZKN"/>
+                            <constraint firstItem="nbU-vk-gWC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JVR-jY-dkj"/>
+                            <constraint firstItem="Cdw-9M-21o" firstAttribute="top" secondItem="j2t-Mk-lvu" secondAttribute="bottom" constant="20" id="S4S-L6-fvJ"/>
+                            <constraint firstItem="Iil-I6-IK8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mO8-XP-fqD"/>
+                            <constraint firstItem="Cdw-9M-21o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mgf-zL-3fJ"/>
+                            <constraint firstItem="Cdw-9M-21o" firstAttribute="top" secondItem="j2t-Mk-lvu" secondAttribute="bottom" constant="8" id="wBD-3t-cwh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="49.275362318840585" y="372.32142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="128" height="128"/>
+    </resources>
 </document>

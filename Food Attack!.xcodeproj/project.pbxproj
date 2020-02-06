@@ -13,8 +13,7 @@
 		EEDD0B6B23EA047100EB0D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDD0B6923EA047100EB0D47 /* Main.storyboard */; };
 		EEDD0B6D23EA047400EB0D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDD0B6C23EA047400EB0D47 /* Assets.xcassets */; };
 		EEDD0B7023EA047400EB0D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDD0B6E23EA047400EB0D47 /* LaunchScreen.storyboard */; };
-		EEDD0B7A23EA0FBE00EB0D47 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = EEDD0B7823EA0FBE00EB0D47 /* pew-pew-lei.caf */; };
-		EEDD0B7B23EA0FBE00EB0D47 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = EEDD0B7923EA0FBE00EB0D47 /* background-music-aac.caf */; };
+		EEF4E8C623ECCB460027C1E8 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF4E8C523ECCB460027C1E8 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +25,7 @@
 		EEDD0B6C23EA047400EB0D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDD0B6F23EA047400EB0D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEDD0B7123EA047400EB0D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EEDD0B7823EA0FBE00EB0D47 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pew-pew-lei.caf"; path = "../../../../Downloads/NinjaAttack/NinjaAttackFinal/NinjaAttack/Sounds/pew-pew-lei.caf"; sourceTree = "<group>"; };
-		EEDD0B7923EA0FBE00EB0D47 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "background-music-aac.caf"; path = "../../../../Downloads/NinjaAttack/NinjaAttackFinal/NinjaAttack/Sounds/background-music-aac.caf"; sourceTree = "<group>"; };
+		EEF4E8C523ECCB460027C1E8 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +60,13 @@
 			children = (
 				EEDD0B7723EA0F6900EB0D47 /* Sounds */,
 				EEDD0B5F23EA047100EB0D47 /* AppDelegate.swift */,
-				EEDD0B6523EA047100EB0D47 /* GameScene.swift */,
-				EEDD0B6723EA047100EB0D47 /* GameViewController.swift */,
 				EEDD0B6923EA047100EB0D47 /* Main.storyboard */,
 				EEDD0B6C23EA047400EB0D47 /* Assets.xcassets */,
 				EEDD0B6E23EA047400EB0D47 /* LaunchScreen.storyboard */,
 				EEDD0B7123EA047400EB0D47 /* Info.plist */,
+				EEDD0B6523EA047100EB0D47 /* GameScene.swift */,
+				EEDD0B6723EA047100EB0D47 /* GameViewController.swift */,
+				EEF4E8C523ECCB460027C1E8 /* GameOverScene.swift */,
 			);
 			path = "Food Attack!";
 			sourceTree = "<group>";
@@ -75,8 +74,6 @@
 		EEDD0B7723EA0F6900EB0D47 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				EEDD0B7923EA0FBE00EB0D47 /* background-music-aac.caf */,
-				EEDD0B7823EA0FBE00EB0D47 /* pew-pew-lei.caf */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -139,11 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDD0B7B23EA0FBE00EB0D47 /* background-music-aac.caf in Resources */,
 				EEDD0B6B23EA047100EB0D47 /* Main.storyboard in Resources */,
 				EEDD0B6D23EA047400EB0D47 /* Assets.xcassets in Resources */,
 				EEDD0B7023EA047400EB0D47 /* LaunchScreen.storyboard in Resources */,
-				EEDD0B7A23EA0FBE00EB0D47 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +151,7 @@
 			files = (
 				EEDD0B6623EA047100EB0D47 /* GameScene.swift in Sources */,
 				EEDD0B6823EA047100EB0D47 /* GameViewController.swift in Sources */,
+				EEF4E8C623ECCB460027C1E8 /* GameOverScene.swift in Sources */,
 				EEDD0B6023EA047100EB0D47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

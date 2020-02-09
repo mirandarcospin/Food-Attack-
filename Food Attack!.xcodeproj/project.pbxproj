@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3B7B9223F0A707007A4C58 /* nom-nom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE3B7B9023F0A707007A4C58 /* nom-nom.mp3 */; };
+		EE3B7B9323F0A707007A4C58 /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE3B7B9123F0A707007A4C58 /* background-music.mp3 */; };
 		EEDD0B6023EA047100EB0D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD0B5F23EA047100EB0D47 /* AppDelegate.swift */; };
 		EEDD0B6623EA047100EB0D47 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD0B6523EA047100EB0D47 /* GameScene.swift */; };
 		EEDD0B6823EA047100EB0D47 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD0B6723EA047100EB0D47 /* GameViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE3B7B9023F0A707007A4C58 /* nom-nom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "nom-nom.mp3"; path = "../../../../Downloads/nom-nom.mp3"; sourceTree = "<group>"; };
+		EE3B7B9123F0A707007A4C58 /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "background-music.mp3"; path = "../../../../Downloads/background-music.mp3"; sourceTree = "<group>"; };
 		EEDD0B5C23EA047100EB0D47 /* Food Attack!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Attack!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDD0B5F23EA047100EB0D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDD0B6523EA047100EB0D47 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		EEDD0B7723EA0F6900EB0D47 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				EE3B7B9123F0A707007A4C58 /* background-music.mp3 */,
+				EE3B7B9023F0A707007A4C58 /* nom-nom.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				EEDD0B6B23EA047100EB0D47 /* Main.storyboard in Resources */,
 				EEDD0B6D23EA047400EB0D47 /* Assets.xcassets in Resources */,
+				EE3B7B9323F0A707007A4C58 /* background-music.mp3 in Resources */,
+				EE3B7B9223F0A707007A4C58 /* nom-nom.mp3 in Resources */,
 				EEDD0B7023EA047400EB0D47 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

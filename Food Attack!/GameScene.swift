@@ -55,7 +55,7 @@ class GameScene: SKScene {
   
   override func didMove(to view: SKView) {
     // 2
-    backgroundColor = SKColor.white
+    backgroundColor = SKColor.yellow
     // 3
     player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
     // 4
@@ -67,13 +67,13 @@ class GameScene: SKScene {
     run(SKAction.repeatForever(
       SKAction.sequence([
         SKAction.run(addPeople),
-        SKAction.wait(forDuration: 1.0)
+        SKAction.wait(forDuration: 1.5)
         ])
     ))
     
-//    let backgroundMusic = SKAudioNode(fileNamed: "background-music-aac.caf")
-//    backgroundMusic.autoplayLooped = true
-//    addChild(backgroundMusic)
+    let backgroundMusic = SKAudioNode(fileNamed: "background-music.mp3")
+    backgroundMusic.autoplayLooped = true
+    addChild(backgroundMusic)
   }
   
   func random() -> CGFloat {
@@ -124,7 +124,7 @@ class GameScene: SKScene {
     guard let touch = touches.first else {
       return
     }
-    //run(SKAction.playSoundFileNamed("pew-pew-lei.caf", waitForCompletion: false))
+    run(SKAction.playSoundFileNamed("nom-nom.mp3", waitForCompletion: false))
     
     let touchLocation = touch.location(in: self)
     
@@ -169,7 +169,7 @@ class GameScene: SKScene {
     people.removeFromParent()
     
     peopleDestroyed += 1
-    if peopleDestroyed > 30 {
+    if peopleDestroyed > 20 {
       let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
       let gameOverScene = GameOverScene(size: self.size, won: true)
       view?.presentScene(gameOverScene, transition: reveal)
